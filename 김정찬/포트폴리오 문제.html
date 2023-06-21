@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 작성하기</title>
+   
+<style>
+    #tbox{
+        border:1px solid black;
+        width: 400px;
+             height: 170px;
+        }
+        
+</style>
+</head>
+<body>
+
+    <h1>Practice3</h1> 
+     
+    <fieldset style="height: 300px; width:900px;">
+    
+        <legend>공지사항 작성하기</legend>
+        <form action="insert.no" method="post">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>제목</b>  <input type="text" style="width:340px"; name="title" id="userId" placeholder="제목을 입력하시오.">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="position: relative; bottom:58px;">내용</b> <textarea name="content" placeholder="제목을 입력하시오."  style="width:342px; height: 150px; position: relative; top:4px; resize:none;"></textarea><br><br>
+    <b>첨부파일</b> <input type="submit" value="파일 선택"> 선택된 파일 없음 <br><br>
+     <input type="submit" style="position: relative; left:190px;" name="uploadFile"  value="작성 하기 "> 
+    </form>
+</body>
+</html>
